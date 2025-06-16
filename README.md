@@ -1,6 +1,6 @@
 # Linear regression on Ames housing dataset.
 This project performs a simple multiple linear regression on the Ames Housing dataset using two features: **Gr_Liv_Area** and **Garage_Area** to predict **SalePrice**. 
-All analysis is conducted in a Jupyter Notebook: `Linear_Regression_Ames_2.ipynb`.
+All analysis is conducted in a Jupyter Notebook: **Linear_Regression_Ames_2.ipynb**.
 
 ---
 
