@@ -11,69 +11,67 @@ the sales prices based on the 'Gr_Liv_Area' and 'Garage_Area` variables.
 
 ---
 
-## 📊 Workflow Summary
+## Workflow Summary
 
-### ✅ 1. Load the Data
+### 1. Load and preview the Data.
 - Read `ames.csv` into a DataFrame using pandas.
 
-### ✅ 2. Data Cleaning & Preparation
-- Handled missing values and ensured data types were correct for modeling.
+### 2. Data Cleaning & Preparation
+- Handled missing & duplicate values and ensured data types were correct for modeling.
 
-### ✅ 3. Exploratory Data Analysis (EDA)
-- Visualized the distributions of:
-  - `SalePrice` (dependent variable)
-  - `Gr_Liv_Area` and `Garage_Area` (independent variables)
-- Used histograms and scatter plots to detect trends and outliers.
+### 3. Exploratory Data Analysis (EDA)
+- Visualized the relationship in our features od interest using a correlation matrix
 
-### ✅ 4. Feature Selection
-- Selected `Gr_Liv_Area` and `Garage_Area` as predictors.
-- Set `SalePrice` as the response variable.
+### 4. Feature Selection
+- Selected `Gr_Liv_Area` and `Garage_Area` as independent variables (predictors).
+- Set `SalePrice` as the dependent variable (the response).
 
-### ✅ 5. Data Splitting
+### Build simple linear regression models for each independent variable vs the dependent variable.
+
+### Create a multimple linear regression
+
+### Data Splitting
 - Split the dataset into training and test sets (75% train, 25% test).
 
-### ✅ 6. Model Training
+### Visualising the distribution of the data before data scaling
+- Plot a pairplot of our independent variables to visualise their distribution
+- Decided on normalizing the data because it does not follow a Gaussian' distribution.
+
+
+### Fit the model on the training data
 - Trained a Multiple Linear Regression model using `LinearRegression()` from `scikit-learn`.
 
-### ✅ 7. Model Parameters
+### Model Parameters
 - Printed model intercept and coefficients.
 
-### ✅ 8. Prediction & Evaluation
+### Prediction & Evaluation
 - Predicted sale prices on the test set.
 - Evaluated model using:
   - Mean Squared Error (MSE)
-  - Root Mean Squared Error (RMSE)
-
-### ✅ 9. Error Visualization
+  
+### Error Visualization
 - Plotted predicted vs actual values to show model performance.
 
-### ✅ 10. Interpretation
+### Interpretation
 - Interpreted coefficients to understand the effect of each variable on price.
-
----
-
-## 📈 Example Output (replace with your actual results)
-
-| Metric | Value |
-|--------|--------|
-| MSE    | 2.13e+09 |
-| RMSE   | 46,161.23 |
 
 ---
 
 ## 🧰 Tools Used
 
-- Python
-- Jupyter Notebook
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-
----
+- Python              - programming language
+- Jupyter Notebook    - an interactive environment
+- pandas              - for data manipulation and analysis
+- numpy               - for numerical computation
+- matplotlib          - for plotting
+- seaborn             - for plotting
+- scikit-learn        - Machine learning library used to: - Split the dataset into training and test sets,
+                                                          - Build and train the linear regression model,
+                                                          - Generate predictions,
+                                                          - Evaluate the model (MSE)
 
 ## 💡 Key Insights
 
 - Strong positive correlation between living area and sale price.
 - Garage area also contributes to predicting sale price, but to a lesser extent.
+- More features may be added to our model to improve performance.
