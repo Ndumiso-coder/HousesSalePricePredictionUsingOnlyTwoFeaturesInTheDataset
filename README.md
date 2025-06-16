@@ -1,20 +1,13 @@
-This project performs a simple multiple linear regression on the Ames Housing dataset using two features: **Gr_Liv_Area** and **Garage_Area** to predict **SalePrice**. All analysis is conducted in a Jupyter Notebook: `Linear_Regression_Ames.ipynb`.
+# Linear regression on Ames housing dataset.
+This project performs a simple multiple linear regression on the Ames Housing dataset using two features: **Gr_Liv_Area** and **Garage_Area** to predict **SalePrice**. 
+All analysis is conducted in a Jupyter Notebook: `Linear_Regression_Ames_2.ipynb`.
 
 ---
 
-## 📁 Project Files
+##  Objective
 
-- `ames.csv` — Dataset file.
-- `Linear_Regression_Ames.ipynb` — Jupyter notebook with full analysis.
-- `README.md` — Project overview and documentation.
-
----
-
-## 🎯 Objective
-
-Predict housing sale prices based on:
-- `Gr_Liv_Area` (above ground living area in square feet)
-- `Garage_Area` (garage size in square feet)
+To analyse the relationship between the three ('Gr_Liv_Area', 'Garage_Area` and 'Sale_Price') variables and build a multiple linear regression model to predict
+the sales prices based on the 'Gr_Liv_Area' and 'Garage_Area` variables.
 
 ---
 
