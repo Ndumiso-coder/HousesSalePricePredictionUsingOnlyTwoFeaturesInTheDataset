@@ -20,7 +20,7 @@ the sales prices based on the Gr_Liv_Area and Garage_Area variables.
 - Handled missing & duplicate values and ensured data types were correct for modeling.
 
 ### 3. Exploratory Data Analysis (EDA)
-- Visualized the relationship in our features od interest using a correlation matrix
+- Visualized the relationship between the three columns of interest using a correlation matrix
 
 ### 4. Feature Selection
 - Selected Gr_Liv_Area and Garage_Area as independent variables (predictors).
@@ -35,7 +35,7 @@ the sales prices based on the Gr_Liv_Area and Garage_Area variables.
 
 ### 8. Visualising the distribution of the data before data scaling
 - Plot a pairplot of our independent variables to visualise their distribution
-- Decided on normalizing the data because it does not follow a Gaussian' distribution.
+- Use normalizing to scale the data because it does not follow a Gaussian' distribution.
 
 
 ### 9. Fit the model on the training data
